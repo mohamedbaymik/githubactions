@@ -1,2 +1,2 @@
-def add(a,b):   # espace manquant après la virgule
+def add(a, b):   
     return a + b
