@@ -47,6 +47,13 @@ jobs:
       #    Si un test échoue, le job s'arrête ici en erreur
       - name: Lancer les tests
         run: pytest -q
+      # 5. Ajouter le linting
+      - name: Vérifier le style avec flake8
+        run: |
+          pip install flake8
+          flake8 app.py –max-line-length=88
+
+
   # ---------------------------------------------------------
   # JOB 2 : Build Docker
   # Ce job ne se lance QUE si le job "test" réussit.
