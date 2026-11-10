@@ -25,7 +25,7 @@ jobs:
   # ---------------------------------------------------------
   test:
     # Runner : machine Ubuntu fournie par GitHub
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     # Étapes du job (exécutées séquentiellement)
     steps:
       # 1. Récupère le code du dépôt sur le runner
